@@ -1,0 +1,24 @@
+{
+    "title": "Stripe",
+    "description": " ",
+    "credentials" : {
+        "fields" : {
+            "apiKey": {
+                "viewClass": "TextFieldView",
+                "label": "Secret API Key",
+                "required": true,
+                "placeholder": "Stripe Secret API Key"
+            }
+        }
+    },
+    "triggers": {
+        "getSucceedInvoices": {
+            "main": "./lib/triggers/getSucceedInvoices.js",
+            "title": "Get succeeded payments",
+            "type": "polling",
+            "metadata": {
+                "out": "./lib/schemas/getSucceedInvoices.out.json"
+            }
+        }
+    }
+}

@@ -1,0 +1,307 @@
+{
+    "type": "object",
+    "properties": {
+        "date": {
+            "type": "number",
+            "title": "Invoice date",
+            "required": false
+        },
+        "id": {
+            "type": "string",
+            "title": "Invoice ID",
+            "required": false
+        },
+        "period_start": {
+            "type": "number",
+            "title": "Invoice period start",
+            "required": false
+        },
+        "period_end": {
+            "type": "number",
+            "title": "Invoice period end",
+            "required": false
+        },
+        "lines": {
+            "type": "array",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "title": "Line id",
+                    "required": false
+                },
+                "type": {
+                    "type": "string",
+                    "title":" Line type",
+                    "required": false
+                },
+                "amount": {
+                    "type": "number",
+                    "title": "Line amount",
+                    "required": false
+                },
+                "currency": {
+                    "type": "string",
+                    "title":" Line currency",
+                    "required": false
+                },
+                "proration": {
+                    "type": "boolean",
+                    "title":" Line proration",
+                    "required": false
+                },
+                "period": {
+                    "type": "object",
+                    "properties": {
+                        "start": {
+                            "type": "string",
+                            "title":" Line Period Start",
+                            "required": false
+                        },
+                        "end": {
+                            "type": "string",
+                            "title":" Line Period End",
+                            "required": false
+                        }
+                    }
+                },
+                "quantity": {
+                    "type": "number",
+                    "title":" Line quantity",
+                    "required": false
+                },
+                "plan":{
+                    "type": "object",
+                    "properties": {
+                        "interval": {
+                            "type": "string",
+                            "title":" Line plan interval",
+                            "required": false
+                        },
+                        "name": {
+                            "type": "string",
+                            "title":" Line plan name",
+                            "required": false
+                        },
+                        "created": {
+                            "type": "number",
+                            "title":" Line plan created time",
+                            "required": false
+                        },
+                        "amount": {
+                            "type": "number",
+                            "title":" Line plan amount",
+                            "required": false
+                        },
+                        "currency": {
+                            "type": "string",
+                            "title":" Line plan currency",
+                            "required": false
+                        },
+                        "id": {
+                            "type": "string",
+                            "title":" Line plan id",
+                            "required": false
+                        },
+                        "interval_count": {
+                            "type": "number",
+                            "title":" Line plan interval count",
+                            "required": false
+                        },
+                        "trial_period_days": {
+                            "type": "number",
+                            "title":" Line plan trial period days",
+                            "required": false
+                        },
+                        "statement_descriptor": {
+                            "type": "string",
+                            "title":" Line plan description",
+                            "required": false
+                        }
+                    }
+                },
+                "description": {
+                    "type": "string",
+                    "title":" Line description",
+                    "required": false
+                }
+            }
+        },
+        "customer": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "required": false,
+                    "title": "Customer ID"
+                },
+                "email": {
+                    "type": "string",
+                    "required": false,
+                    "title": "Customer email"
+                },
+                "description": {
+                    "type": "string",
+                    "required": false,
+                    "title": "Customer description"
+                },
+                "discount": {
+                    "type": "string",
+                    "required": false,
+                    "title": "Customer discount"
+                },
+                "account_balance": {
+                    "type": "number",
+                    "required": false,
+                    "title": "Customer account balance"
+                },
+                "currency": {
+                    "type": "string",
+                    "required": false,
+                    "title": "Customer currency"
+                },
+                "default_card": {
+                    "type" : "object",
+                    "title" : "Default Card",
+                    "required": false,
+                    "properties" : {
+                        "address_line1": {
+                            "type": "string",
+                            "title": "Address Line 1",
+                            "required": false
+                        },
+                        "address_line2": {
+                            "type": "string",
+                            "title": "Address Line 2",
+                            "required": false
+                        },
+                        "address_city": {
+                            "type": "string",
+                            "title": "Address City",
+                            "required": false
+                        },
+                        "address_state": {
+                            "type": "string",
+                            "title": "Address State",
+                            "required": false
+                        },
+                        "address_zip": {
+                            "type": "string",
+                            "title": "Address Zip",
+                            "required": false
+                        },
+                        "address_country": {
+                            "type": "string",
+                            "title": "Address Country",
+                            "required": false
+                        }
+                    }
+                },
+                "metadata": {
+                    "type": "object",
+                    "properties": {
+                        "vat_id": {
+                            "type": "string",
+                            "title": "Customer VAT ID",
+                            "required": false
+                        }
+                    }
+                }
+            }
+        },
+        "attempted": {
+            "type": "boolean",
+            "title": "Invoice attempted",
+            "required": false
+        },
+        "closed": {
+            "type": "boolean",
+            "title": "Invoice closed",
+            "required": false
+        },
+        "forgiven": {
+            "type": "boolean",
+            "title": "Invoice forgiven",
+            "required": false
+        },
+        "paid": {
+            "type": "boolean",
+            "title": "Invoice paid",
+            "required": false
+        },
+        "attempt_count": {
+            "type": "number",
+            "title": "Invoice attempt count",
+            "required": false
+        },
+        "amount_due": {
+            "type": "number",
+            "title": "Invoice amount due",
+            "required": false
+        },
+        "currency": {
+            "type": "string",
+            "title": "Invoice currency",
+            "required": false
+        },
+        "starting_balance": {
+            "type": "number",
+            "title": "Invoice starting balance",
+            "required": false
+        },
+        "ending_balance": {
+            "type": "number",
+            "title": "Invoice ending balance",
+            "required": false
+        },
+        "next_payment_attempt": {
+            "type": "number",
+            "title": "Invoice next payment attempt",
+            "required": false
+        },
+        "webhooks_delivered_at": {
+            "type": "number",
+            "title": "Invoice webhooks delivered at",
+            "required": false
+        },
+        "charge": {
+            "type": "number",
+            "title": "Invoice charge",
+            "required": false
+        },
+        "discount": {
+            "type": "number",
+            "title": "Invoice discount",
+            "required": false
+        },
+        "application_fee": {
+            "type": "number",
+            "title": "Invoice application fee",
+            "required": false
+        },
+        "subscription": {
+            "type": "string",
+            "title": "Invoice subscription ID",
+            "required": false
+        },
+        "statement_descriptor": {
+            "type": "string",
+            "title": "Invoice statement descriptor",
+            "required": false
+        },
+        "description": {
+            "type": "string",
+            "title": "Invoice description",
+            "required": false
+        },
+        "receipt_number": {
+            "type": "number",
+            "title": "Invoice receipt number",
+            "required": false
+        },
+        "tax_percent": {
+            "type": "number",
+            "title": "Tax percent",
+            "required": false
+        }
+    }
+}
