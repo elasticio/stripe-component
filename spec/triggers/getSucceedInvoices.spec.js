@@ -7,7 +7,7 @@ describe('stripe get succeed invoices', function () {
     var processTrigger = require('../../lib/triggers/getSucceedInvoices.js');
     var msg = messages.newMessageWithBody({});
     var cfg = {
-        apiKey: 'sk_test_ayLm8LYys2hPO4TdblMzsfue'
+        apiKey: 'sampleKey'
     };
     var next = jasmine.createSpy('next');
 
