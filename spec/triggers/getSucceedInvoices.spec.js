@@ -13,7 +13,7 @@ describe('stripe get succeed invoices', function () {
 
     var self;
 
-    beforeEach(function(){
+    beforeEach(function() {
         self = jasmine.createSpyObj('self',['emit']);
     });
 
