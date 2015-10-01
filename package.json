@@ -23,7 +23,7 @@
   "homepage": "https://github.com/elasticio/stripe-component#readme",
   "dependencies": {
     "moment": "2.0.0",
-    "stripe": "^3.0.2",
+    "stripe": "*",
     "q": "^1.4.1",
     "elasticio-node": "^0.0.5",
     "request": "^2.61.0",
