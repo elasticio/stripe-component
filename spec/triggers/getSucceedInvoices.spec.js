@@ -9,7 +9,6 @@ describe('stripe get succeed invoices', function () {
     var cfg = {
         apiKey: 'sampleKey'
     };
-    var next = jasmine.createSpy('next');
 
     var self;
 
@@ -29,7 +28,7 @@ describe('stripe get succeed invoices', function () {
             .reply(200, {metadata: {vat_id: 3}});
         
         runs(function(){
-            processTrigger.process.call(self, msg, cfg, next, {});
+            processTrigger.process.call(self, msg, cfg, {});
         });
 
         waitsFor(function(){
@@ -77,7 +76,7 @@ describe('stripe get succeed invoices', function () {
             .reply(200, {metadata: {vat_id: 3}});
 
         runs(function(){
-            processTrigger.process.call(self, msg, cfg, next, {
+            processTrigger.process.call(self, msg, cfg, {
                 lastId : 'evt_15Sl432licPf0ryOISZdYpxx'
             });
         });
@@ -127,7 +126,7 @@ describe('stripe get succeed invoices', function () {
             .reply(200, {metadata: {vat_id: 3}});
 
         runs(function(){
-            processTrigger.process.call(self, msg, cfg, next, {});
+            processTrigger.process.call(self, msg, cfg, {});
         });
 
         waitsFor(function(){
@@ -160,7 +159,7 @@ describe('stripe get succeed invoices', function () {
                 }
             });
         runs(function(){
-            processTrigger.process.call(self, msg, cfg, next, {});
+            processTrigger.process.call(self, msg, cfg, {});
         });
 
         waitsFor(function(){
