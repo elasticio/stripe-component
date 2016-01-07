@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/elasticio/stripe-component#readme",
   "dependencies": {
+    "elasticio-sailor-nodejs": "1.1.0",
     "moment": "2.0.0",
     "stripe": "*",
     "q": "^1.4.1",
