@@ -35,3 +35,5 @@ $ git remote add elasticio your-created-team-name@git.elastic.io:stripe-componen
 $ git push elasticio master
 ```
 Obviously the naming of your team and repository is entierly upto you and if you do not put any corresponding naming our system will auto generate it for you but the naming might not entierly correspond to your project requirements.
+
+To learn on how to use this component please check our [HOW TO USE](https://github.com/elasticio/stripe-component/blob/master/HOW_TO_USE.md) guide.
