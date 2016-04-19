@@ -1,6 +1,7 @@
 {
     "title": "Stripe",
-    "description": " ",
+    "description": "Stripe - Online Payment System",
+    "docsUrl":"https://github.com/elasticio/stripe-component",
     "credentials" : {
         "fields" : {
             "apiKey": {
