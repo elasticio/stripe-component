@@ -170,7 +170,7 @@ describe('stripe get succeed invoices', function () {
             var calls = self.emit.calls;
             expect(calls.length).toEqual(2);
             expect(calls[0].args[0]).toEqual('error');
-            expect(calls[0].args[1].raw).toEqual({"msg":"Resource not found.","statusCode":401});
+            expect(calls[0].args[1].raw).toEqual({"msg":"Resource not found.","statusCode":401,"headers":{"content-type":"application/json"}, "requestId":undefined});
             expect(calls[1].args).toEqual(['end']);
         });
     });
